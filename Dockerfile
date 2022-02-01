@@ -6,6 +6,7 @@ RUN apt-get update -qq && \
                       libpq-dev \        
                       nodejs           
 
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs mysql-client
 # 作業ディレクトリの作成、設定
 RUN mkdir /bunsenbako 
 ##作業ディレクトリ名をAPP_ROOTに割り当てて、以下$APP_ROOTで参照
