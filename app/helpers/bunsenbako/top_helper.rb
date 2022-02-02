@@ -1,0 +1,2 @@
+module Bunsenbako::TopHelper
+end
