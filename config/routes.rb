@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   namespace :bunsenbako do
-    get '/',      to: 'top#index'
+    root          to: 'top#index'
     get 'index',  to: 'top#index'
   end
 
