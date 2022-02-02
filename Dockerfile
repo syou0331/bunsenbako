@@ -17,5 +17,8 @@ ADD ./Gemfile $APP_ROOT/Gemfile
 ADD ./Gemfile.lock $APP_ROOT/Gemfile.lock
 
 # Gemfileのbundle install
-RUN bundle install
+ENV BUNDLER_VERSION 1.17.3
+RUN gem update --system \
+    && gem install bundler -v $BUNDLER_VERSION \
+    && bundle install
 ADD . $APP_ROOT
