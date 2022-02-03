@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
-  namespace :bunsenbako do
-    root          to: 'top#index'
-    get 'index',  to: 'top#index'
-  end
+  root          to: 'top#index'
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
