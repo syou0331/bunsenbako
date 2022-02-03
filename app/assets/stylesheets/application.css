@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+  .site-header {
+    border-bottom: double;
+}
